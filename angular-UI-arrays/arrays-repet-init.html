@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+   
+   <head>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+      <script type="text/javascript" src="../app.js"></script>
+   </head>
+   
+   <body ng-app="myapp">
+      <div ng-init="numbers=[0,1,2,3,4,5,6,7,8,9]">
+         <p ng-repeat="number in numbers">Number is {{number}}</p>
+         <p ng-repeat="number in numbers">The area is <span ng-bind="number"></span></p>
+      </div>
+   </body>
+</html>
